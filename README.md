@@ -28,7 +28,7 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 
 - Wie ben jij in de VR Controller?
 - Wie zijn de agent/agents?
-- Hoe zit het parkour eruit?
+- Hoe zit het parcour eruit?
 
 ### Kwadrant
 [Informatie over Kwadranten](https://www.cuemath.com/geometry/quadrant/)
