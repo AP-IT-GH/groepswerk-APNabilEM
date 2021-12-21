@@ -28,5 +28,6 @@
 - Agent training
 - UI
 - Game Manager
+- Tensorboard
 
 
