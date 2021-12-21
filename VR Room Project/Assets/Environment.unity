@@ -427,6 +427,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3930661156890470879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7324499336479946134, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+  m_PrefabInstance: {fileID: 5992419914833026121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3930661156890470880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930661156890470879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04dea32777fc6834cb15b058b639cfb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+--- !u!114 &3930661156890470881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930661156890470879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!4 &4451618925575254885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7993337359834345260, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
@@ -439,6 +474,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366045866}
     m_Modifications:
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BehaviorName
+      value: MoveToGoalAgent
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 410899643870053041, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7324499336479946134, guid: bc3eda89ca8d544408398dbb86342543, type: 3}
       propertyPath: m_Name
       value: Agent
