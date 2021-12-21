@@ -1,4 +1,4 @@
-# To Do List
+
 
 ## Nabil El Moussaoui
 - Unity project setup [VR Room Project]
@@ -20,3 +20,13 @@
 
 ## Mohamed Azdad
 - One pager aangemaakt
+
+
+# To Do List
+
+- Environment setup
+- Agent training
+- UI
+- Game Manager
+
+
