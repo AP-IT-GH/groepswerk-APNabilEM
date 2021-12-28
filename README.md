@@ -32,3 +32,32 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 
 ### Kwadrant
 [Informatie over Kwadranten](https://www.cuemath.com/geometry/quadrant/)
+
+## Inleiding
+### Bondige titel van het project, beschrijf in minimum aantal woorden het functionele aspect van jullie project
+### Inleiding (is iets helemaal anders dan een samenvatting!): 1 paragraaf
+### Korte samenvatting met daarin wat de lezer van de tutorial kan verwachten tegen het einde te hebben bijgeleerd
+
+## Methoden
+### Installatie: enkel vermelden van de versies meegeven, geen uitleg over hoe je moet installeren, tenzij het over zaken gaat die niet in de cursus staan
+### Verloop van de simulatie of het spel
+### Duidelijk overzicht van de observaties, mogelijke acties en beloningen
+### Beschrijving van de objecten
+### Beschrijvingen van de gedragingen van de objecten
+### Alle informatie van de one-pager (CHECK)
+### Indien van toepassing: waar jullie afwijken van de one-pager en waarom
+
+## Resultaten
+### Resultaten van de training met Tensorboard afbeeldingen
+### Beschrijving van de Tensorboard grafieken
+### Opvallende waarnemingen tijdens het trainen 
+
+## Conclusie (1 à 3 paragrafen)
+
+### Samengevat wat we gedaan hebben (één zin)
+### Kort overzicht resultaten (2 á 3 zinnen zonder cijfers te vernoemen)
+### Een 'persoonlijke' visie op de resultaten, wat betekenen de resultaten nu eigenlijk
+### Verbeteringen naar de toekomst toe
+
+## Bronvermelding
+Je mag eventueel gebruik maken van de instructievideo's van deze cursus of naar de Obelix tutorial. Voor alle ander materiaal waar je gebruik van maakt en dat bestaat uit meer dan één regel aan code, verwijs je naar de oorspronkelijke bron op een gepaste wijze (APA-stijl). Een ontbrekende of incorrecte verwijzing wordt als plagiaat beschouwd.
