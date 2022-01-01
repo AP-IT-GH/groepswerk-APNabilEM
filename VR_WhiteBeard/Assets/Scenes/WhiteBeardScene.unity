@@ -733,7 +733,7 @@ MonoBehaviour:
   rightSide: {fileID: 1980542037}
   boat: {fileID: 727698084}
   boatsRigidbody: {fileID: 1382451260}
-  speed: 5
+  speed: 3
   rotationSpeed: 15
 --- !u!1 &1319361919
 GameObject:
