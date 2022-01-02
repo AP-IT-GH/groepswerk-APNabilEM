@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
+//using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
+using UnityEngine.UI;
 
 public class BoatAi : Agent
 {
     // Start is called before the first frame update
     //[SerializeField] private float jumpStrength = 5f;
-    [SerializeField] private TextMeshPro scoreboard;
-
+    public Text scoreboard;
+    //[SerializeField] private float speed = 1f;
     private bool canMove = true;
     private Rigidbody rigidbody;
+    Paddle paddle = new Paddle();
 
     // Start is called before the first frame update
     void Start()
@@ -31,41 +33,40 @@ public class BoatAi : Agent
     public override void OnEpisodeBegin()
     {
         
-        transform.localPosition = new Vector3(7, 0.5f, 0);
-        transform.localRotation = Quaternion.Euler(0, -90, 0f);
+      //  transform.localPosition = new Vector3(7, 0.5f, 0);
+       // transform.localRotation = Quaternion.Euler(0, -90, 0f);
     }
 
-
-    public override void OnActionReceived(ActionBuffers actions)
+    public override void OnActionReceived(float[] vectorAction)
     {
-        var vectorAction = actions.DiscreteActions;
+        //base.OnActionReceived(vectorAction);
         if (vectorAction[0] == 1)
         {
             //punish with small negative award to prevent jumping all the time
             AddReward(-0.01f);
-            Jump();
+            Move();
         }
+
     }
 
-    public override void Heuristic(in ActionBuffers actionsOut)
+    public override void Heuristic(float[] actionsOut)
     {
-        //map actions to movement
-        var jump = 0;
-        if (Input.GetKey(KeyCode.Space))
+        //base.Heuristic(actionsOut);
+        var move = 0;
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            jump = 1;
+            move = 1;
         }
-        var discreteActionsOut = actionsOut.DiscreteActions;
-        discreteActionsOut[0] = jump;
+        
+        actionsOut[0] = move;
     }
 
 
-
-    private void Jump()
+    private void Move()
     {
         if (canMove)
         {
-            rigidbody.AddForce(new Vector3(0, jumpStrength, 0), ForceMode.VelocityChange);
+            rigidbody.velocity = transform.forward * (paddle.getSpeed() / 5);
             canMove = false;
         }
     }
@@ -77,17 +78,17 @@ public class BoatAi : Agent
             canMove = true;
         }
 
-        if (collision.transform.CompareTag("Terrain") || collision.transform.CompareTag("Player"))
+        if (collision.transform.CompareTag("Terrain") || collision.transform.CompareTag("Boat"))
         {
-            Debug.Log("collide with obstacle");
-            Destroy(collision.gameObject);
+            transform.localPosition = new Vector3(-120f, -215, -150f);
+            transform.localRotation = Quaternion.Euler(-90f, 180f, 0f);
+            Debug.Log("collided with obstacle (terrain and/or another boat)");
             AddReward(-1f);
         }
 
         if (collision.transform.CompareTag("Checkpoint"))
         {
-            Debug.Log("collide with good obstacle");
-            Destroy(collision.gameObject);
+            Debug.Log("collided with checkpoint");
             AddReward(1f);
         }
         /*if (collision.transform.CompareTag("HiddenCollider"))

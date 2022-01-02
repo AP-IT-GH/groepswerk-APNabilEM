@@ -31,5 +31,10 @@ public class Paddle : MonoBehaviour
             //transform.Rotate(0, speed, 0);
         }
     }
+
+    public float getSpeed()
+    {
+        return speed;
+    }
     
 }
