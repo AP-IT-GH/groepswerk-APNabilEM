@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Box
+  - Trail
+  - Fire
+  - Checkpoint
+  - Terrain
+  - Water
   layers:
   - Default
   - TransparentFX
