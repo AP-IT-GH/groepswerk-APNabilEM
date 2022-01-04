@@ -2064,7 +2064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
       propertyPath: m_LocalScale.x
@@ -2334,6 +2334,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1478294165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4209222643800381046, guid: 1e80fab6fd5297f46a6918fd97381c22, type: 3}
+  m_PrefabInstance: {fileID: 4209222642475530781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1478294166
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478294165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 0.5, z: 3}
+  m_Center: {x: 0, y: 0.2, z: 0.2}
 --- !u!1 &1487704657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,6 +2882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 971852509893587076, guid: 3b896a9196f01c7439d95b74bb493afa, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 971852509893587099, guid: 3b896a9196f01c7439d95b74bb493afa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2937,6 +2959,10 @@ PrefabInstance:
       propertyPath: rigidBody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4209222642996733276, guid: 1e80fab6fd5297f46a6918fd97381c22, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4209222643257156133, guid: 1e80fab6fd5297f46a6918fd97381c22, type: 3}
       propertyPath: rigidBody
       value: 
@@ -2997,6 +3023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BOAT_PARTENT_AI
       objectReference: {fileID: 0}
+    - target: {fileID: 4209222643800381046, guid: 1e80fab6fd5297f46a6918fd97381c22, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e80fab6fd5297f46a6918fd97381c22, type: 3}
 --- !u!1001 &4320796342294827072
@@ -3016,7 +3046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320796342142113319, guid: f25d5408fcd4d5c44be74272d501ab8f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4320796342142113319, guid: f25d5408fcd4d5c44be74272d501ab8f, type: 3}
       propertyPath: m_LocalPosition.x
