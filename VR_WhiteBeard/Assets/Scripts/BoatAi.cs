@@ -14,14 +14,32 @@ public class BoatAi : Agent
     public Text scoreboard;
     //[SerializeField] private float speed = 1f;
     private bool canMove = true;
+    private bool canTurn = true;
     private Rigidbody rigidbody;
     Paddle paddle = new Paddle();
+    private Vector3 startingPosition;
+    private Quaternion startingRotation;
+    private int score = 0;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-       
+        startingPosition = transform.position;
+        startingRotation = transform.rotation;
+    }
+
+    private void FixedUpdate()
+    {
+        if (canMove)
+        {
+            RequestDecision();
+        }
+        else if (canTurn)
+        {
+            RequestDecision();
+        }
     }
 
     // Update is called once per frame
@@ -39,12 +57,26 @@ public class BoatAi : Agent
 
     public override void OnActionReceived(float[] vectorAction)
     {
+       
         //base.OnActionReceived(vectorAction);
         if (vectorAction[0] == 1)
         {
             //punish with small negative award to prevent jumping all the time
-            AddReward(-0.01f);
+            //AddReward(-0.01f);
             Move();
+        }
+        else if (vectorAction[0] == 0)
+        {
+            AddReward(-0.01f);
+        }
+
+        if (vectorAction[1] == 1)
+        {
+            TurnLeft();
+        }
+        if (vectorAction[1] == 2)
+        {
+            TurnRight();
         }
 
     }
@@ -53,12 +85,24 @@ public class BoatAi : Agent
     {
         //base.Heuristic(actionsOut);
         var move = 0;
+        var movementRotation = 0;
         if (Input.GetKey(KeyCode.UpArrow))
-        {
+        { 
             move = 1;
+            //Move();
+           
         }
-        
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            movementRotation = 1;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            movementRotation = 2;
+        }
+       
         actionsOut[0] = move;
+        actionsOut[1] = movementRotation;
     }
 
 
@@ -66,36 +110,69 @@ public class BoatAi : Agent
     {
         if (canMove)
         {
-            rigidbody.velocity = transform.forward * (paddle.getSpeed() / 5);
-            canMove = false;
+            rigidbody.velocity = transform.forward * (paddle.getSpeed() / 1);
+            //transform.position += Vector3.forward * Time.deltaTime * paddle.getSpeed();
+            //canMove = false;
+        }
+    }
+
+    private void TurnLeft()
+    {
+        float rotationSpeed = paddle.getRotationSpeed();
+        float speed = paddle.getSpeed();
+        if (canTurn)
+        {
+            transform.Rotate(new Vector3(0, -rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
+        }
+    }
+
+    private void TurnRight()
+    {
+        float rotationSpeed = paddle.getRotationSpeed();
+        float speed = paddle.getSpeed();
+        if (canTurn)
+        {
+            transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("Water"))
+        if (collision.gameObject.CompareTag("Water"))
         {
             canMove = true;
         }
 
-        if (collision.transform.CompareTag("Terrain") || collision.transform.CompareTag("Boat"))
+        if (collision.gameObject.CompareTag("Terrain") || collision.gameObject.CompareTag("Boat"))
         {
-            transform.localPosition = new Vector3(-120f, -215, -150f);
-            transform.localRotation = Quaternion.Euler(-90f, 180f, 0f);
+            transform.localPosition = startingPosition;//new Vector3(-120f, -215, -150f);
+            transform.localRotation = startingRotation;//Quaternion.Euler(-90f, 180f, 0f);
             Debug.Log("collided with obstacle (terrain and/or another boat)");
             AddReward(-1f);
+            EndEpisode();
         }
-
-        if (collision.transform.CompareTag("Checkpoint"))
+/*
+        if (collision.gameObject.CompareTag("Checkpoint"))
         {
             Debug.Log("collided with checkpoint");
             AddReward(1f);
-        }
+        }*/
         /*if (collision.transform.CompareTag("HiddenCollider"))
         {
             Debug.Log("collide with hidden collider");
             AddReward(1f);
         }*/
 
+    }
+
+    private void OnTriggerEnter(Collider collidedObj)
+    {
+        if (collidedObj.gameObject.CompareTag("Checkpoint"))
+        {
+            AddReward(1f);
+            Debug.Log("Went through the checkpoint");
+            score++;
+            scoreboard.text = score.ToString();
+        }
     }
 }

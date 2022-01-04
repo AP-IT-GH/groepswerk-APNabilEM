@@ -36,5 +36,10 @@ public class Paddle : MonoBehaviour
     {
         return speed;
     }
+
+    public float getRotationSpeed()
+    {
+        return rotationSpeed;
+    }
     
 }
