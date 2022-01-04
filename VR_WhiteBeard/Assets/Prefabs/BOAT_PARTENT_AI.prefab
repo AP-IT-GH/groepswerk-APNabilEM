@@ -420,7 +420,6 @@ GameObject:
   - component: {fileID: 3557344897182829416}
   - component: {fileID: 2885677703111335588}
   - component: {fileID: 2948336776431701536}
-  - component: {fileID: 3059692670834221009}
   - component: {fileID: 1343019723802402472}
   - component: {fileID: 2326693605654011470}
   - component: {fileID: 4823218399085229567}
@@ -489,22 +488,6 @@ MonoBehaviour:
   m_BehaviorName: LilBoat
   TeamId: 0
   m_UseChildSensors: 1
---- !u!114 &3059692670834221009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557344897066671505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b6042bc9a5d4aa58d931eae49442e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
 --- !u!114 &1343019723802402472
 MonoBehaviour:
   m_ObjectHideFlags: 0

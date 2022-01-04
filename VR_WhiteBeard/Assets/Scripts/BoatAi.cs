@@ -6,6 +6,7 @@ using Unity.MLAgents;
 //using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using UnityEngine.UI;
+using Unity.MLAgents.Actuators;
 
 public class BoatAi : Agent
 {
@@ -56,9 +57,9 @@ public class BoatAi : Agent
        // transform.localRotation = Quaternion.Euler(0, -90, 0f);
     }
 
-    public override void OnActionReceived(float[] vectorAction)
+    public override void OnActionReceived(ActionBuffers actions)
     {
-       
+        var vectorAction = actions.DiscreteActions;
         //base.OnActionReceived(vectorAction);
         if (vectorAction[0] == 1)
         {
@@ -82,7 +83,7 @@ public class BoatAi : Agent
 
     }
 
-    public override void Heuristic(float[] actionsOut)
+    public override void Heuristic(in ActionBuffers actionsOut)
     {
         //base.Heuristic(actionsOut);
         var move = 0;
@@ -101,9 +102,10 @@ public class BoatAi : Agent
         {
             movementRotation = 2;
         }
-       
-        actionsOut[0] = move;
-        actionsOut[1] = movementRotation;
+
+        var discreteActionsOut = actionsOut.DiscreteActions;
+        discreteActionsOut[0] = move;
+        discreteActionsOut[1] = movementRotation;
     }
 
 
