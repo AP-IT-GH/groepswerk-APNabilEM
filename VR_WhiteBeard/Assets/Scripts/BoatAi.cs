@@ -21,14 +21,14 @@ public class BoatAi : Agent
     private Vector3 startingPosition;
     private Quaternion startingRotation;
     private int score = 0;
-    
+    public float speed = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        startingPosition = new Vector3(-124f, -215, -150f); //transform.position;
-        startingRotation = Quaternion.Euler(-0f, 0f, 0f);//transform.rotation;
+        startingPosition = new Vector3(-124.42f, -215, -100f); //transform.position;
+        startingRotation = Quaternion.Euler(-0f, -90f, 0f);//transform.rotation;
         rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
@@ -75,10 +75,12 @@ public class BoatAi : Agent
         if (vectorAction[1] == 1)
         {
             TurnLeft();
+            AddReward(0.0001f);
         }
         if (vectorAction[1] == 2)
         {
             TurnRight();
+            AddReward(0.0001f);
         }
 
     }
@@ -113,7 +115,7 @@ public class BoatAi : Agent
     {
         if (canMove)
         {
-            rigidbody.velocity = transform.forward * (paddle.getSpeed() / 1);
+            rigidbody.velocity = transform.forward * paddle.getSpeed() * speed;
             //transform.position += Vector3.forward * Time.deltaTime * paddle.getSpeed();
             //canMove = false;
         }
