@@ -26,8 +26,9 @@ public class BoatAi : Agent
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        startingPosition = transform.position;
-        startingRotation = transform.rotation;
+        startingPosition = new Vector3(-124f, -215, -150f); //transform.position;
+        startingRotation = Quaternion.Euler(-0f, 0f, 0f);//transform.rotation;
+        rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
     private void FixedUpdate()
