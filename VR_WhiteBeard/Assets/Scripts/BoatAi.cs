@@ -23,12 +23,17 @@ public class BoatAi : Agent
     private int score = 0;
     public float speed = 1f;
 
+    [SerializeField] private Transform positie;
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        startingPosition = new Vector3(-124.42f, -215, -100f); //transform.position;
-        startingRotation = Quaternion.Euler(-0f, -90f, 0f);//transform.rotation;
+        //startingPosition = new Vector3(-124.42f, -215, -100f); //transform.position;
+        //startingRotation = Quaternion.Euler(-0f, -90f, 0f);//transform.rotation;
+
+        startingPosition = positie.localPosition;
+        startingRotation = positie.localRotation;
         rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
