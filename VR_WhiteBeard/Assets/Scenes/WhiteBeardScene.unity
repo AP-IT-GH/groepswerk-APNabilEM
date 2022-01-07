@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 9855910}
   m_Layer: 0
   m_Name: TerrainRechtdoor
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4841,7 +4841,7 @@ GameObject:
   - component: {fileID: 1315811113}
   m_Layer: 0
   m_Name: TerrainRechtsBocht
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5177,7 +5177,7 @@ GameObject:
   - component: {fileID: 1441057034}
   m_Layer: 0
   m_Name: TerrainLinksBocht
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
