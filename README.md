@@ -40,12 +40,47 @@ Om het spel te starten moet er eerst op "Start het Spel' knop drukken. Vervolgen
 De parcour dat we gaan gebruiken is een sprint waarvan we vanuit de start rechtstreeks naar de finish roeien. De checkpoints worden gebruikt om de Boot-AI te laten trainen.
 
 ### Duidelijk overzicht van de observaties, mogelijke acties en beloningen (KOMT NOG)
-### Beschrijving van de objecten
 
+### Beschrijving van de objecten en de gedragingen van de objecten
 
+```
+WhiteBeardScene
+    Boat_1
+    EnvironmentRechtdoor
+        TerrainRechtdoor
+        CheckpointTrainingRechtdoor
+            ArrayCheckpoints
+        WaterBasicDaytime
+        BOAT_PARENT_AI
+    EnvironmentRechtsBocht
+        TerrainRechtdoor
+        CheckpointTrainingRechtdoor
+            ArrayCheckpoints
+        WaterBasicDaytime
+        BOAT_PARENT_AI
+    EnvironmentLinksBocht
+        TerrainRechtdoor
+        CheckpointTrainingRechtdoor
+            ArrayCheckpoints
+        WaterBasicDaytime
+        BOAT_PARENT_AI
+```
 
-### Beschrijvingen van de gedragingen van de objecten
-### Alle informatie van de one-pager
+Boat_1 = Speler
+De environments 'Rechtdoor', 'LinksBocht' en 'RechtsBocht' zijn onze chunks environments waar we onze Boot-AI's makkelijker kunnen laten trainen, zodat we die later in onze Sprint parcour gaan implementeren.
+
+Elk environment bevat een BootAI, een terrein, water en enkele checkpoints waar de Boot-AI's punten krijgen als men erdoor gaat.
+
+Voor het terrein hebben we een tag gebruikt om de collision van onze Boot-AI te ondervinden. Hetzelfde principe wordt ook toegepast voor onze Boat_1.
+De checkpoints hebben we een tag aan toegekent dat we daarop een positieve reward krijgen.
+
+In verband met de implementatie van het water en de boten hebben we een script gebruikt zodat we het effect krijgen dat de boot drijft.
+
+## Scripts
+
+Referentie naar onze scripts vinden jullie hier terecht: [scripts](VR_WhiteBeard/Assets/Scripts)
+
+### One Pager
 
 #### Inleiding van het spel
 
@@ -67,8 +102,6 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 
 #### Kwadrant
 [Informatie over Kwadranten](https://www.cuemath.com/geometry/quadrant/)
-
-### Indien van toepassing: waar jullie afwijken van de one-pager en waarom
 
 ## Resultaten
 ### Resultaten van de training met Tensorboard afbeeldingen
