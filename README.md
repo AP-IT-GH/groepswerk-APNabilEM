@@ -20,7 +20,7 @@ We geven hier stap voor stap de uitleg hoe we van een lege Unity project onze pr
 
 ## Methoden
 
-### Installaties
+### Installatie
 
 We hebben deze installaties nodig om het project te vervolledigen:
 - Unity: 2020.3.18f1
@@ -29,10 +29,21 @@ We hebben deze installaties nodig om het project te vervolledigen:
 - Python 3.9.7 64-bit
 - PyTorch 1.10.1
 
-### Installatie: enkel vermelden van de versies meegeven, geen uitleg over hoe je moet installeren, tenzij het over zaken gaat die niet in de cursus staan
-### Verloop van de simulatie of het spel
-### Duidelijk overzicht van de observaties, mogelijke acties en beloningen
+### Verloop van het spel
+
+Om het spel te starten moet er eerst op "Start het Spel' knop drukken. Vervolgens start het spel en vertrekken de AI-Boten. Het is nu de bedoeling om een per een de AI Boot in te halen. Om dit te kunnen doen moet een speler met een Paddle roeien om te kunnen bewegen, maar als men naar voor moet gaan roeien moet de speler afwisselend naar rechts en links roeien. Om naar rechts te kunnen gaan moet men links roeien en om naar links te kunnen gaan moet men rechts roeien.
+
+![01_SprintParcour.png](Afbeeldingen/01_SprintParcour.png)
+
+*figuur1*
+
+De parcour dat we gaan gebruiken is een sprint waarvan we vanuit de start rechtstreeks naar de finish roeien. De checkpoints worden gebruikt om de Boot-AI te laten trainen.
+
+### Duidelijk overzicht van de observaties, mogelijke acties en beloningen (KOMT NOG)
 ### Beschrijving van de objecten
+
+
+
 ### Beschrijvingen van de gedragingen van de objecten
 ### Alle informatie van de one-pager
 
@@ -50,9 +61,9 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 
 #### Draaiboek
 
-- Wie ben jij in de VR Controller?
-- Wie zijn de agent/agents?
-- Hoe zit het parcour eruit?
+- Wie ben jij in de VR Controller? Boat Player
+- Wie zijn de agent/agents? Boat AI
+- Hoe zit het parcour eruit? Sprint [*figuur1*](01_SprintParcour.png)
 
 #### Kwadrant
 [Informatie over Kwadranten](https://www.cuemath.com/geometry/quadrant/)
