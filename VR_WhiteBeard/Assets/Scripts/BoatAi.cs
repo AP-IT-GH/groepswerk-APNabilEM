@@ -72,21 +72,36 @@ public class BoatAi : Agent
             //AddReward(-0.01f);
             Move();
         }
-        else if (vectorAction[0] == 0)
+        if (vectorAction[0] == 0)
         {
             AddReward(-0.01f);
         }
 
+        /**/
         if (vectorAction[1] == 1)
         {
             TurnLeft();
-            AddReward(0.0001f);
+            AddReward(-0.001f); //Recently added
         }
         if (vectorAction[1] == 2)
         {
             TurnRight();
-            AddReward(0.0001f);
+            AddReward(-0.001f); //Recently added
         }
+        /**/
+
+        /*
+        if (vectorAction[1] == 1)
+        {
+            Move();
+            TurnLeft();
+        }
+        if (vectorAction[1] == 2)
+        {
+            Move();
+            TurnRight();
+        }
+        */
 
     }
 
@@ -134,6 +149,13 @@ public class BoatAi : Agent
         {
             transform.Rotate(new Vector3(0, -rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
         }
+        /*
+        if (canTurn && canMove)
+        {
+            transform.Rotate(new Vector3(0, -rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
+            rigidbody.velocity = transform.forward * paddle.getSpeed() * speed;
+        }
+        */
     }
 
     private void TurnRight()
@@ -144,6 +166,13 @@ public class BoatAi : Agent
         {
             transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
         }
+        /*
+        if (canTurn && canMove)
+        {
+            transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
+            rigidbody.velocity = transform.forward * paddle.getSpeed() * speed;
+        }
+        */
     }
 
     private void OnCollisionEnter(Collision collision)

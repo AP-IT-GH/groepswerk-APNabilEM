@@ -1,0 +1,47 @@
+{
+    "LilBoat": {
+        "checkpoints": [
+            {
+                "steps": 119841,
+                "file_path": "results\\Sail01\\LilBoat\\LilBoat-119841.onnx",
+                "reward": null,
+                "creation_time": 1641589762.8626337,
+                "auxillary_file_paths": [
+                    "results\\Sail01\\LilBoat\\LilBoat-119841.pt"
+                ]
+            },
+            {
+                "steps": 124891,
+                "file_path": "results\\Sail01\\LilBoat\\LilBoat-124891.onnx",
+                "reward": null,
+                "creation_time": 1641589992.137947,
+                "auxillary_file_paths": [
+                    "results\\Sail01\\LilBoat\\LilBoat-124891.pt"
+                ]
+            },
+            {
+                "steps": 134998,
+                "file_path": "results\\Sail01\\LilBoat\\LilBoat-134998.onnx",
+                "reward": null,
+                "creation_time": 1641590212.113871,
+                "auxillary_file_paths": [
+                    "results\\Sail01\\LilBoat\\LilBoat-134998.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 134998,
+            "file_path": "results\\Sail01\\LilBoat.onnx",
+            "reward": null,
+            "creation_time": 1641590212.113871,
+            "auxillary_file_paths": [
+                "results\\Sail01\\LilBoat\\LilBoat-134998.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0"
+    }
+}
