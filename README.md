@@ -19,12 +19,22 @@ Voor het vak VR Experience hebben we ervoor gekozen om een speed boat racing gam
 We geven hier stap voor stap de uitleg hoe we van een lege Unity project onze project kan reconstrueren. Verder geven we hieronder meer uitleg over de installatie, objecten, scripts, assets en methoden dat we gebruiken.
 
 ## Methoden
+
+### Installaties
+
+We hebben deze installaties nodig om het project te vervolledigen:
+- Unity: 2020.3.18f1
+- ML-Agents 2.0.0
+- Anaconda 2021.11
+- Python 3.9.7 64-bit
+- PyTorch 1.10.1
+
 ### Installatie: enkel vermelden van de versies meegeven, geen uitleg over hoe je moet installeren, tenzij het over zaken gaat die niet in de cursus staan
 ### Verloop van de simulatie of het spel
 ### Duidelijk overzicht van de observaties, mogelijke acties en beloningen
 ### Beschrijving van de objecten
 ### Beschrijvingen van de gedragingen van de objecten
-### Alle informatie van de one-pager (CHECK)
+### Alle informatie van de one-pager
 
 #### Inleiding van het spel
 
