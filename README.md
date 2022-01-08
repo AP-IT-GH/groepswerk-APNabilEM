@@ -49,19 +49,25 @@ WhiteBeardScene
     EnvironmentRechtdoor
         TerrainRechtdoor
         CheckpointTrainingRechtdoor
-            ArrayCheckpoints
+            Checkpoint (1)
+            Checkpoint (2)
+            ...
         WaterBasicDaytime
         BOAT_PARENT_AI
     EnvironmentRechtsBocht
-        TerrainRechtdoor
-        CheckpointTrainingRechtdoor
-            ArrayCheckpoints
+        TerrainRechtsBocht
+        CheckpointTrainingRechtsBocht
+            Checkpoint (1)
+            Checkpoint (2)
+            ...
         WaterBasicDaytime
         BOAT_PARENT_AI
     EnvironmentLinksBocht
-        TerrainRechtdoor
-        CheckpointTrainingRechtdoor
-            ArrayCheckpoints
+        TerrainLinksBocht
+        CheckpointTrainingLinksBocht
+            Checkpoint (1)
+            Checkpoint (2)
+            ...
         WaterBasicDaytime
         BOAT_PARENT_AI
 ```
