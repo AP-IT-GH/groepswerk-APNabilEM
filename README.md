@@ -1,4 +1,4 @@
-# groepswerk-WhiteBeard
+# VR Speedboat Racing Game
 
 ## Groepsleden
 
@@ -11,9 +11,12 @@
 | Udaya Sharma | s118202 |
 
 ## Inleiding
-### Bondige titel van het project, beschrijf in minimum aantal woorden het functionele aspect van jullie project
-### Inleiding (is iets helemaal anders dan een samenvatting!): 1 paragraaf
-### Korte samenvatting met daarin wat de lezer van de tutorial kan verwachten tegen het einde te hebben bijgeleerd
+
+Voor het vak VR Experience hebben we ervoor gekozen om een speed boat racing game te ontwikkelen in VR met behulp van Unity. Het is de bedoeling dat je een sprint gaat afleggen. Een sprint is een soort circuit dat geen laps bevat, waarbij je van de start naar de finishline moet geraken. In deze race is de bedoeling dat je eerst geraakt tegen de AI getrainde boten.
+
+## Samenvatting
+
+We geven hier stap voor stap de uitleg hoe we van een lege Unity project onze project kan reconstrueren. Verder geven we hieronder meer uitleg over de installatie, objecten, scripts, assets en methoden dat we gebruiken.
 
 ## Methoden
 ### Installatie: enkel vermelden van de versies meegeven, geen uitleg over hoe je moet installeren, tenzij het over zaken gaat die niet in de cursus staan
