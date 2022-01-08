@@ -63,7 +63,7 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 
 - Wie ben jij in de VR Controller? Boat Player
 - Wie zijn de agent/agents? Boat AI
-- Hoe zit het parcour eruit? Sprint [*figuur1*](01_SprintParcour.png)
+- Hoe zit het parcour eruit? Sprint [*figuur1*](Afbeeldingen/01_SprintParcour.png)
 
 #### Kwadrant
 [Informatie over Kwadranten](https://www.cuemath.com/geometry/quadrant/)
