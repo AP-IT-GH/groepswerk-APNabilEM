@@ -72,6 +72,8 @@ WhiteBeardScene
         BOAT_PARENT_AI
 ```
 
+![02_ChunksParcour.png](Afbeeldingen/02_ChunksParcour.png)
+
 Boat_1 = Speler
 De environments 'Rechtdoor', 'LinksBocht' en 'RechtsBocht' zijn onze chunks environments waar we onze Boot-AI's makkelijker kunnen laten trainen, zodat we die later in onze Sprint parcour gaan implementeren.
 
