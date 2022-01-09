@@ -43,13 +43,15 @@ De parcour dat we gaan gebruiken is een sprint waarvan we vanuit de start rechts
 ![01_SprintParcour.png](Afbeeldingen/01_SprintParcour.png)\
 *figuur2*
 
-### Duidelijk overzicht van de observaties, mogelijke acties en beloningen (Nog niet klaar --Udaya take the wheel)
+### Duidelijk overzicht van de observaties, mogelijke acties en beloningen
 
 #### Obeservaties
+
 Voor observaties worden er Rayperception sensor componenten gebruikt. Zo kunnen de Ai-boaten hun omgeving en obstakels observeren. Er worden 5 rays per directie gebruikt om te obeserveren. Omdat de boten ook andere boten kunnen raken is de gebruikt gemaakt van 150 graden ray. Ray lengte is ingesteld op 105 zodat de boten op de checkpoint kunnen stralen.
 
 
 #### Acties
+
 Na observeren, moet de agent een actie uitvoeren. Er zijn vier acties mogelijk, voorbewegen, stilstaan, links en recht draaien . De AI-Boat moet aan de hand van obervatie de nodige actie uitvoeren. Als er een ray wordt gecast naar een terrein, moet de Ai-boat dit proberen te vermijden.
 
 #### Beloningen
@@ -96,7 +98,7 @@ WhiteBeardScene
 Boat_1 = Speler
 De environments 'Rechtdoor', 'LinksBocht' en 'RechtsBocht' zijn onze chunks environments waar we onze Boot-AI's makkelijker kunnen laten trainen, zodat we die later in onze Sprint parcour gaan implementeren.
 
-Elk environment bevat een BootAI, een terrein, water en enkele checkpoints waar de Boot-AI's punten krijgen als men erdoor gaat.
+Elk environment bevat een Boot-AI, een terrein, water en enkele checkpoints waar de Boot-AI's punten krijgen als men erdoor gaat.
 
 Voor het terrein hebben we een tag gebruikt om de collision van onze Boot-AI te ondervinden. Hetzelfde principe wordt ook toegepast voor onze Boat_1.
 De checkpoints hebben we een tag aan toegekent dat we daarop een positieve reward krijgen.
@@ -161,14 +163,26 @@ Nabil:
 Dit is de training op het grote terein
 Voor de komende testen hebben we besloten om 3 terreinen te construeren en die dan te laten trainen.
 
-## Conclusie (1 à 3 paragrafen)
-
-### Samengevat wat we gedaan hebben (één zin)
-We hebben voor dit vak een Boat Racing spel gemaakt en het is voltooid met veel complicaties. Het VR-gedeelte was niet zo moeilijk, maar het trainen van een AI om te racen was erg ingewikkeld. We hebben de AI een aantal keer moeten trainen om het gewenste resultaat te krijgen. De AI-boten hebben verschillende uitdagingen. De AI-boten werden met verschillende parameters getraind om telkens een ander resultaat te krijgen. Door dit te doen, had de speler de ervaring van een echte race. Sommige zijn makkelijk en sommige zijn erg moeilijk te winnen. Door dit te doen, werd onze spel interactief en leuk om te spelen.
-### Kort overzicht resultaten (2 á 3 zinnen zonder cijfers te vernoemen)
-We hebben de gewenste eindresultaat behaald. Speler kan met Vr bril zelf varen en de uitdaging aangaan.
 ### Een 'persoonlijke' visie op de resultaten, wat betekenen de resultaten nu eigenlijk
+
+In het begin raakt de Boot-AI het terrein aan de kanten waarvan ze strafpunten krijgen. Zo leert die op het einde dat die door elke checkpoint moet gaan om een beloning te krijgen.
+
+## Conclusie
+
+### Samengevat wat we gedaan hebben
+
+We hebben voor dit vak een Boat Racing spel gemaakt en het is voltooid met veel complicaties. Het VR-gedeelte was niet zo moeilijk, maar het trainen van een AI om te racen was erg ingewikkeld. We hebben de AI een aantal keer moeten trainen om het gewenste resultaat te krijgen. De AI-boten hebben verschillende uitdagingen. De AI-boten werden met verschillende parameters getraind om telkens een ander resultaat te krijgen. Door dit te doen, had de speler de ervaring van een echte race. Sommige zijn makkelijk en sommige zijn erg moeilijk te winnen. Door dit te doen, werd onze spel interactief en leuk om te spelen.
+
+### Kort overzicht resultaten
+
+We hebben de gewenste eindresultaat behaald. Speler kan met Vr bril zelf varen en de uitdaging aangaan.
+
 ### Verbeteringen naar de toekomst toe
+
 We zijn wat laat begonnen met training van AI. We hadden veel complicaties met training. In de toekomst zouden we beter eerst beginnne met AI-gedeelte.
+
 ## Bronvermelding
-Je mag eventueel gebruik maken van de instructievideo's van deze cursus of naar de Obelix tutorial. Voor alle ander materiaal waar je gebruik van maakt en dat bestaat uit meer dan één regel aan code, verwijs je naar de oorspronkelijke bron op een gepaste wijze (APA-stijl). Een ontbrekende of incorrecte verwijzing wordt als plagiaat beschouwd.
+
+Boat Controller - Unity Ocean Tutorial 4/4. (2019, 9 maart). YouTube. Geraadpleegd op 9 januari 2022, van https://www.youtube.com/watch?v=gdW_rXFE1Gk
+
+ML-Agents 1.0+ Creating a Mario Kart like AI. (2020, 15 november). YouTube. Geraadpleegd op 9 januari 2022, van https://www.youtube.com/watch?v=n5rY9ffqryU
