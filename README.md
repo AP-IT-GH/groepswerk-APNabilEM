@@ -31,15 +31,23 @@ We hebben deze installaties nodig om het project te vervolledigen:
 
 ### Verloop van het spel
 
-Om het spel te starten moet er eerst op "Start het Spel' knop drukken. Vervolgens start het spel en vertrekken de AI-Boten. Het is nu de bedoeling om een per een de AI Boot in te halen. Om dit te kunnen doen moet een speler met een Paddle roeien om te kunnen bewegen, maar als men naar voor moet gaan roeien moet de speler afwisselend naar rechts en links roeien. Om naar rechts te kunnen gaan moet men links roeien en om naar links te kunnen gaan moet men rechts roeien.
+Om het spel te starten moet er eerst op "Start het Spel' knop drukken. Vervolgens start het spel en vertrekken de AI-Boten. Het is nu de bedoeling om één per één de AI Boten in te halen. Om dit te kunnen doen moet een speler met een Paddle roeien om te kunnen bewegen, maar als men naar voor moet gaan roeien moet de speler afwisselend naar rechts en links roeien. Om naar rechts te kunnen gaan moet men links roeien en om naar links te kunnen gaan moet men rechts roeien.
 
-![01_SprintParcour.png](Afbeeldingen/01_SprintParcour.png)
-
+![03_Boat_Left.png](Afbeeldingen/03_Boat_Left.png)\
 *figuur1*
+
+![03_Boat_Right.png](Afbeeldingen/03_Boat_Right.png)\
+*figuur2*
+
+![03_Boat_Forward.png](Afbeeldingen/03_Boat_Forward.png)\
+*figuur3*
 
 De parcour dat we gaan gebruiken is een sprint waarvan we vanuit de start rechtstreeks naar de finish roeien. De checkpoints worden gebruikt om de Boot-AI te laten trainen.
 
-### Duidelijk overzicht van de observaties, mogelijke acties en beloningen (KOMT NOG)
+![01_SprintParcour.png](Afbeeldingen/01_SprintParcour.png)\
+*figuur4*
+
+### Duidelijk overzicht van de observaties, mogelijke acties en beloningen (Nog niet klaar --Udaya take the wheel)
 
 
 
@@ -74,7 +82,8 @@ WhiteBeardScene
         BOAT_PARENT_AI
 ```
 
-![02_ChunksParcour.png](Afbeeldingen/02_ChunksParcour.png)
+![02_ChunksParcour.png](Afbeeldingen/02_ChunksParcour.png)\
+*figuur5*
 
 Boat_1 = Speler
 De environments 'Rechtdoor', 'LinksBocht' en 'RechtsBocht' zijn onze chunks environments waar we onze Boot-AI's makkelijker kunnen laten trainen, zodat we die later in onze Sprint parcour gaan implementeren.
@@ -117,7 +126,7 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 
 - Wie ben jij in de VR Controller? Boat Player
 - Wie zijn de agent/agents? Boat AI
-- Hoe zit het parcour eruit? Sprint [*figuur1*](Afbeeldingen/01_SprintParcour.png)
+- Hoe zit het parcour eruit? Sprint [*figuur4*](Afbeeldingen/01_SprintParcour.png)
 
 #### Kwadrant
 [Informatie over Kwadranten](https://www.cuemath.com/geometry/quadrant/)
@@ -126,6 +135,22 @@ In het begin zal je met je controller naar het start knop moeten wijzen om het s
 ### Resultaten van de training met Tensorboard afbeeldingen
 ### Beschrijving van de Tensorboard grafieken
 ### Opvallende waarnemingen tijdens het trainen 
+
+Abdelmajid:
+
+![04_TensorBoardStats_Abdelmajid.png](Afbeeldingen/04_TensorBoardStats_Abdelmajid.png)\
+*figuur6*
+
+![05_TensorBoardGraph_Abdelmajid.png](Afbeeldingen/05_TensorBoardGraph_Abdelmajid.png)\
+*figuur7*
+
+Nabil:
+
+![06_TensorBoardGraph_Nabil.png](Afbeeldingen/06_TensorBoardGraph_Nabil.png)\
+*figuur7*
+
+Dit is de training op het grote terein
+Voor de komende testen hebben we besloten om 3 terreinen te construeren en die dan te laten trainen.
 
 ## Conclusie (1 à 3 paragrafen)
 
