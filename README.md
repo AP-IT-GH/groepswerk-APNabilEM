@@ -105,6 +105,42 @@ De checkpoints hebben we een tag aan toegekent dat we daarop een positieve rewar
 
 In verband met de implementatie van het water en de boten hebben we een script gebruikt zodat we het effect krijgen dat de boot drijft.
 
+### Behaviour parameters
+
+```yaml
+behaviors:
+  LilBoat:
+    trainer_type: sac
+    hyperparameters:
+      learning_rate: 0.0003
+      learning_rate_schedule: constant
+      batch_size: 64
+      buffer_size: 50000
+      buffer_init_steps: 0
+      tau: 0.005
+      steps_per_update: 10.0
+      save_replay_buffer: false
+      init_entcoef: 0.01
+      reward_signal_steps_per_update: 10.0
+    network_settings:
+      normalize: false
+      hidden_units: 251
+      num_layers: 2
+      vis_encode_type: simple
+      memory:
+        memory_size: 128
+        sequence_length: 64
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    keep_checkpoints: 5
+    max_steps: 500000000
+    time_horizon: 10
+    summary_freq: 2000
+    threaded: true
+```
+
 ## Scripts
 
 Referentie naar onze scripts vinden jullie hier terecht:\
@@ -115,28 +151,27 @@ Referentie naar onze scripts vinden jullie hier terecht:\
 [WaterManager.cs](VR_WhiteBeard/Assets/Scripts/WaterManager.cs) \
 [WaveManager.cs](VR_WhiteBeard/Assets/Scripts/WaveManager.cs)
 
+## One Pager
 
-### One Pager
-
-#### Inleiding van het spel
+### Inleiding van het spel
 
 We hebben ervoor gekozen om een speed boat racing game te ontwikkelen in VR. Via een menu ga je het spel kunnen starten. Dan zal het spel beginnen. Je zal dan moeten racen tegen andere boten (AI gestuurd). 
 
-#### AI gestuurde boten
+### AI gestuurde boten
 
 Het AI gedeelte zal dan de boten zijn dat tegen jou racen. Zij moeten dus de route leren en ervoor zorgen dat ze niet tegen elkaar botsen of tegen jou. Onderweg zou er dan ook de mogelijkheid zijn om punten te winnen. Dat moeten ze ook leren vangen. 
 
-#### Interactie met het spel
+### Interactie met het spel
 
 In het begin zal je met je controller naar het start knop moeten wijzen om het spel te starten. Als je in de boot zit zal je hem kunnen besturen via het stuur. Het stuur zal grabbable zijn door twee handen en kan dus draaien naar links en rechts.
 
-#### Draaiboek
+### Draaiboek
 
 - Wie ben jij in de VR Controller? Boat Player
 - Wie zijn de agent/agents? Boat AI
 - Hoe zit het parcour eruit? Sprint [*figuur2*](Afbeeldingen/01_SprintParcour.png)
 
-#### Kwadrant
+### Kwadrant
 ![Kwadrant.PNG](Afbeeldingen/Kwadrant.PNG)\
 
 
