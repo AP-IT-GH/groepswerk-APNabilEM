@@ -108,10 +108,8 @@ In verband met de implementatie van het water en de boten hebben we een script g
 ## Scripts
 
 Referentie naar onze scripts vinden jullie hier terecht:\
-[BoatAgent.cs](VR_WhiteBeard/Assets/Scripts/BoatAgent.cs) \
 [BoatAi.cs](VR_WhiteBeard/Assets/Scripts/BoatAi.cs) \
 [DebugCheckpointRay.cs](VR_WhiteBeard/Assets/Scripts/DebugCheckpointRay.cs) \
-[Engine.cs](VR_WhiteBeard/Assets/Scripts/Engine.cs) \
 [Floater.cs](VR_WhiteBeard/Assets/Scripts/Floater.cs) \
 [Paddle.cs](VR_WhiteBeard/Assets/Scripts/Paddle.cs) \
 [WaterManager.cs](VR_WhiteBeard/Assets/Scripts/WaterManager.cs) \
