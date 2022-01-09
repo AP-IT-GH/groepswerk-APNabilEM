@@ -1057,8 +1057,8 @@ MonoBehaviour:
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
-      BranchSizes: 0200000001000000
-    VectorActionSize: 0200000001000000
+      BranchSizes: 0200000003000000
+    VectorActionSize: 0200000003000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
@@ -1101,6 +1101,8 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 100000
   scoreboard: {fileID: 0}
+  speed: 1
+  position: {fileID: 0}
 --- !u!54 &8249731256759649414
 Rigidbody:
   m_ObjectHideFlags: 0

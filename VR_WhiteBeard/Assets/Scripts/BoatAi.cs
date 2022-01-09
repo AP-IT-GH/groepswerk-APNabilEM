@@ -85,7 +85,7 @@ public class BoatAi : Agent
             TurnLeft();
             AddReward(0.0001f);
         }
-        if (vectorAction[1] == 0)
+        if (vectorAction[1] == 2)
         {
             TurnRight();
             AddReward(0.0001f);
