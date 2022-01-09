@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 7727384}
   - component: {fileID: 7727383}
   - component: {fileID: 7727382}
+  - component: {fileID: 7727385}
   m_Layer: 0
   m_Name: Checkpoint (2)
   m_TagString: Checkpoint
@@ -176,7 +177,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7727380}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -218,6 +219,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7727380}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7727385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8097345
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +243,7 @@ GameObject:
   - component: {fileID: 8097349}
   - component: {fileID: 8097348}
   - component: {fileID: 8097347}
+  - component: {fileID: 8097350}
   m_Layer: 0
   m_Name: Checkpoint (4)
   m_TagString: Checkpoint
@@ -271,7 +285,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097345}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -313,6 +327,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097345}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &8097350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8097345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9855908
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +752,7 @@ GameObject:
   - component: {fileID: 98877371}
   - component: {fileID: 98877370}
   - component: {fileID: 98877369}
+  - component: {fileID: 98877372}
   m_Layer: 0
   m_Name: Checkpoint (1)
   m_TagString: Checkpoint
@@ -767,7 +794,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98877367}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -809,6 +836,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98877367}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &98877372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98877367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &162445867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1044,6 +1083,7 @@ GameObject:
   - component: {fileID: 191481715}
   - component: {fileID: 191481714}
   - component: {fileID: 191481713}
+  - component: {fileID: 191481716}
   m_Layer: 0
   m_Name: Checkpoint (3)
   m_TagString: Checkpoint
@@ -1085,7 +1125,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191481711}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1127,6 +1167,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191481711}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &191481716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191481711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &229787267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1191,7 @@ GameObject:
   - component: {fileID: 229787271}
   - component: {fileID: 229787270}
   - component: {fileID: 229787269}
+  - component: {fileID: 229787272}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Checkpoint
@@ -1180,7 +1233,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229787267}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1222,6 +1275,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229787267}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &229787272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229787267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &235308782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 235308782, guid: b13bddafe453795419c95ab33450e4a2, type: 3}
@@ -1424,9 +1489,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 288093901}
     - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: position
+      value: 
+      objectReference: {fileID: 288093901}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
       propertyPath: scoreboard
       value: 
       objectReference: {fileID: 35378982}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: BOAT_AI_PREFAB
+      value: 
+      objectReference: {fileID: 288093902}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.x
+      value: 422
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.y
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.z
+      value: 637
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
     - target: {fileID: 8249731256759649416, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
       propertyPath: m_Name
       value: BOAT_PARTENT_AI
@@ -1440,6 +1533,11 @@ PrefabInstance:
 --- !u!4 &288093901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8249731256600993330, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+  m_PrefabInstance: {fileID: 288093900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &288093902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8249731256759649416, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
   m_PrefabInstance: {fileID: 288093900}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &290798322
@@ -1511,6 +1609,7 @@ GameObject:
   - component: {fileID: 320301908}
   - component: {fileID: 320301907}
   - component: {fileID: 320301906}
+  - component: {fileID: 320301909}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Checkpoint
@@ -1552,7 +1651,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320301904}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1594,6 +1693,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320301904}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &320301909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320301904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &342069409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,6 +1717,7 @@ GameObject:
   - component: {fileID: 342069413}
   - component: {fileID: 342069412}
   - component: {fileID: 342069411}
+  - component: {fileID: 342069414}
   m_Layer: 0
   m_Name: Checkpoint (2)
   m_TagString: Checkpoint
@@ -1647,7 +1759,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342069409}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1689,6 +1801,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342069409}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &342069414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342069409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &369409408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1825,7 @@ GameObject:
   - component: {fileID: 369409412}
   - component: {fileID: 369409411}
   - component: {fileID: 369409410}
+  - component: {fileID: 369409413}
   m_Layer: 0
   m_Name: Checkpoint (2)
   m_TagString: Checkpoint
@@ -1742,7 +1867,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369409408}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1784,6 +1909,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369409408}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &369409413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369409408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &427224796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3015,6 +3152,7 @@ GameObject:
   - component: {fileID: 436322308}
   - component: {fileID: 436322307}
   - component: {fileID: 436322306}
+  - component: {fileID: 436322309}
   m_Layer: 0
   m_Name: Checkpoint (7)
   m_TagString: Checkpoint
@@ -3056,7 +3194,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436322304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3098,6 +3236,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436322304}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &436322309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436322304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447282185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3260,7 @@ GameObject:
   - component: {fileID: 447282189}
   - component: {fileID: 447282188}
   - component: {fileID: 447282187}
+  - component: {fileID: 447282190}
   m_Layer: 0
   m_Name: Checkpoint (5)
   m_TagString: Checkpoint
@@ -3151,7 +3302,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447282185}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3193,6 +3344,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447282185}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &447282190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447282185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &474225658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 474225658, guid: b13bddafe453795419c95ab33450e4a2, type: 3}
@@ -3424,6 +3587,7 @@ GameObject:
   - component: {fileID: 598409112}
   - component: {fileID: 598409111}
   - component: {fileID: 598409110}
+  - component: {fileID: 598409113}
   m_Layer: 0
   m_Name: Checkpoint (3)
   m_TagString: Checkpoint
@@ -3465,7 +3629,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598409108}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3507,6 +3671,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598409108}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &598409113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598409108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &624568001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3695,7 @@ GameObject:
   - component: {fileID: 624568005}
   - component: {fileID: 624568004}
   - component: {fileID: 624568003}
+  - component: {fileID: 624568006}
   m_Layer: 0
   m_Name: Checkpoint (6)
   m_TagString: Checkpoint
@@ -3560,7 +3737,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624568001}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3602,6 +3779,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624568001}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &624568006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624568001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &624731643
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,6 +3803,7 @@ GameObject:
   - component: {fileID: 624731647}
   - component: {fileID: 624731646}
   - component: {fileID: 624731645}
+  - component: {fileID: 624731648}
   m_Layer: 0
   m_Name: Checkpoint (8)
   m_TagString: Checkpoint
@@ -3655,7 +3845,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624731643}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3697,6 +3887,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624731643}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &624731648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624731643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &633787006
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,6 +4026,7 @@ GameObject:
   - component: {fileID: 764529056}
   - component: {fileID: 764529055}
   - component: {fileID: 764529054}
+  - component: {fileID: 764529057}
   m_Layer: 0
   m_Name: Checkpoint (6)
   m_TagString: Checkpoint
@@ -3865,7 +4068,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764529052}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3907,6 +4110,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764529052}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &764529057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764529052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &796819125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
@@ -3924,6 +4139,7 @@ GameObject:
   - component: {fileID: 833789965}
   - component: {fileID: 833789964}
   - component: {fileID: 833789963}
+  - component: {fileID: 833789966}
   m_Layer: 0
   m_Name: Checkpoint (4)
   m_TagString: Checkpoint
@@ -3965,7 +4181,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833789961}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4007,6 +4223,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833789961}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &833789966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833789961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &902520923
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,9 +4377,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 925921269}
     - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: position
+      value: 
+      objectReference: {fileID: 925921269}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
       propertyPath: scoreboard
       value: 
       objectReference: {fileID: 35378982}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: BOAT_AI_PREFAB
+      value: 
+      objectReference: {fileID: 1103137860}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.x
+      value: 415.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.y
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.z
+      value: 702.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
     - target: {fileID: 8249731256759649416, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
       propertyPath: m_Name
       value: BOAT_PARTENT_AI
@@ -4179,6 +4435,7 @@ GameObject:
   - component: {fileID: 987519563}
   - component: {fileID: 987519562}
   - component: {fileID: 987519561}
+  - component: {fileID: 987519564}
   m_Layer: 0
   m_Name: Checkpoint (5)
   m_TagString: Checkpoint
@@ -4220,7 +4477,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987519559}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4262,6 +4519,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987519559}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &987519564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987519559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1026604179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4274,6 +4543,7 @@ GameObject:
   - component: {fileID: 1026604183}
   - component: {fileID: 1026604182}
   - component: {fileID: 1026604181}
+  - component: {fileID: 1026604184}
   m_Layer: 0
   m_Name: Checkpoint (8)
   m_TagString: Checkpoint
@@ -4315,7 +4585,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026604179}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4357,6 +4627,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026604179}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1026604184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026604179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1046953144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
@@ -4484,6 +4766,7 @@ GameObject:
   - component: {fileID: 1083060961}
   - component: {fileID: 1083060960}
   - component: {fileID: 1083060959}
+  - component: {fileID: 1083060962}
   m_Layer: 0
   m_Name: Checkpoint (3)
   m_TagString: Checkpoint
@@ -4525,7 +4808,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083060957}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4567,6 +4850,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083060957}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1083060962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083060957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094265529
 GameObject:
   m_ObjectHideFlags: 0
@@ -4579,6 +4874,7 @@ GameObject:
   - component: {fileID: 1094265533}
   - component: {fileID: 1094265532}
   - component: {fileID: 1094265531}
+  - component: {fileID: 1094265534}
   m_Layer: 0
   m_Name: Checkpoint (4)
   m_TagString: Checkpoint
@@ -4620,7 +4916,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094265529}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4662,10 +4958,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094265529}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1094265534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094265529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1098222252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4320796342142113319, guid: f25d5408fcd4d5c44be74272d501ab8f, type: 3}
   m_PrefabInstance: {fileID: 4320796342294827072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1103137860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8249731256759649416, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+  m_PrefabInstance: {fileID: 925921268}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1247457617
 GameObject:
@@ -4679,6 +4992,7 @@ GameObject:
   - component: {fileID: 1247457621}
   - component: {fileID: 1247457620}
   - component: {fileID: 1247457619}
+  - component: {fileID: 1247457622}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Checkpoint
@@ -4720,7 +5034,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247457617}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4762,6 +5076,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247457617}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1247457622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247457617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1252419548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2600171671410732707, guid: b13bddafe453795419c95ab33450e4a2, type: 3}
@@ -4797,6 +5123,7 @@ GameObject:
   - component: {fileID: 1296404248}
   - component: {fileID: 1296404247}
   - component: {fileID: 1296404246}
+  - component: {fileID: 1296404249}
   m_Layer: 0
   m_Name: Checkpoint (7)
   m_TagString: Checkpoint
@@ -4838,7 +5165,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296404244}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4880,6 +5207,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296404244}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1296404249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296404244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1315811111
 GameObject:
   m_ObjectHideFlags: 0
@@ -5125,9 +5464,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1343169277}
     - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: position
+      value: 
+      objectReference: {fileID: 1343169277}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
       propertyPath: scoreboard
       value: 
       objectReference: {fileID: 35378982}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: BOAT_AI_PREFAB
+      value: 
+      objectReference: {fileID: 1343169278}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.x
+      value: 181
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.y
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingPosition.z
+      value: 855.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingRotation.w
+      value: -0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249731256759649415, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+      propertyPath: startingRotation.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8249731256759649416, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
       propertyPath: m_Name
       value: BOAT_PARTENT_AI
@@ -5141,6 +5508,11 @@ PrefabInstance:
 --- !u!4 &1343169277 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8249731256600993330, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
+  m_PrefabInstance: {fileID: 1343169276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1343169278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8249731256759649416, guid: 073c6ee0ab1ccba459412b52af36f774, type: 3}
   m_PrefabInstance: {fileID: 1343169276}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1359506540 stripped
@@ -5559,6 +5931,7 @@ GameObject:
   - component: {fileID: 1727818330}
   - component: {fileID: 1727818329}
   - component: {fileID: 1727818328}
+  - component: {fileID: 1727818331}
   m_Layer: 0
   m_Name: Checkpoint (1)
   m_TagString: Checkpoint
@@ -5600,7 +5973,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727818326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5642,6 +6015,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727818326}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1727818331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727818326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1765012433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,6 +6276,7 @@ GameObject:
   - component: {fileID: 1858760222}
   - component: {fileID: 1858760221}
   - component: {fileID: 1858760220}
+  - component: {fileID: 1858760223}
   m_Layer: 0
   m_Name: Checkpoint (5)
   m_TagString: Checkpoint
@@ -5932,7 +6318,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858760218}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5974,6 +6360,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858760218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1858760223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858760218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1882831602
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +6384,7 @@ GameObject:
   - component: {fileID: 1882831606}
   - component: {fileID: 1882831605}
   - component: {fileID: 1882831604}
+  - component: {fileID: 1882831607}
   m_Layer: 0
   m_Name: Checkpoint (7)
   m_TagString: Checkpoint
@@ -6027,7 +6426,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882831602}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6069,6 +6468,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882831602}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1882831607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882831602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1961584639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6338,6 +6749,7 @@ GameObject:
   - component: {fileID: 1984771086}
   - component: {fileID: 1984771085}
   - component: {fileID: 1984771084}
+  - component: {fileID: 1984771087}
   m_Layer: 0
   m_Name: Checkpoint (6)
   m_TagString: Checkpoint
@@ -6379,7 +6791,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984771082}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6421,6 +6833,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984771082}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1984771087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984771082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2099499273
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,6 +6857,7 @@ GameObject:
   - component: {fileID: 2099499277}
   - component: {fileID: 2099499276}
   - component: {fileID: 2099499275}
+  - component: {fileID: 2099499278}
   m_Layer: 0
   m_Name: Checkpoint (1)
   m_TagString: Checkpoint
@@ -6474,7 +6899,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099499273}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6516,6 +6941,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099499273}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2099499278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099499273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7d84be045d7f4d947b3b44625c0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &971852509031283210
 PrefabInstance:
   m_ObjectHideFlags: 0

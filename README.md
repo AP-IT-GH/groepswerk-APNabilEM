@@ -27,7 +27,7 @@ We hebben deze installaties nodig om het project te vervolledigen:
 - ML-Agents 2.0.0
 - Anaconda 2021.11
 - Python 3.9.7 64-bit
-- PyTorch 1.10.1
+- PyTorch 1.10.0
 
 ### Verloop van het spel
 
@@ -40,6 +40,8 @@ Om het spel te starten moet er eerst op "Start het Spel' knop drukken. Vervolgen
 De parcour dat we gaan gebruiken is een sprint waarvan we vanuit de start rechtstreeks naar de finish roeien. De checkpoints worden gebruikt om de Boot-AI te laten trainen.
 
 ### Duidelijk overzicht van de observaties, mogelijke acties en beloningen (KOMT NOG)
+
+
 
 ### Beschrijving van de objecten en de gedragingen van de objecten
 

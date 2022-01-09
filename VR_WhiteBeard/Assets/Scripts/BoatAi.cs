@@ -22,8 +22,10 @@ public class BoatAi : Agent
     private Quaternion startingRotation;
     private int score = 0;
     public float speed = 1f;
+    //[SerializeField] private GameObject BOAT_AI_PREFAB;
+    [SerializeField] private Transform position;
+    private bool collided = false;
 
-    [SerializeField] private Transform positie;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +34,10 @@ public class BoatAi : Agent
         //startingPosition = new Vector3(-124.42f, -215, -100f); //transform.position;
         //startingRotation = Quaternion.Euler(-0f, -90f, 0f);//transform.rotation;
 
-        startingPosition = positie.localPosition;
-        startingRotation = positie.localRotation;
+        startingPosition = position.localPosition;
+        startingRotation = position.localRotation;
         rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        //Instantiate(BOAT_AI_PREFAB, startingPosition, startingRotation);
     }
 
     private void FixedUpdate()
@@ -57,9 +60,9 @@ public class BoatAi : Agent
 
     public override void OnEpisodeBegin()
     {
-        
-      //  transform.localPosition = new Vector3(7, 0.5f, 0);
-       // transform.localRotation = Quaternion.Euler(0, -90, 0f);
+        collided = false;
+        // transform.localPosition = new Vector3(7, 0.5f, 0);
+        // transform.localRotation = Quaternion.Euler(0, -90, 0f);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -72,36 +75,21 @@ public class BoatAi : Agent
             //AddReward(-0.01f);
             Move();
         }
-        if (vectorAction[0] == 0)
+        else if (vectorAction[0] == 0)
         {
             AddReward(-0.01f);
         }
 
-        /**/
         if (vectorAction[1] == 1)
         {
             TurnLeft();
-            AddReward(-0.001f); //Recently added
+            AddReward(0.0001f);
         }
-        if (vectorAction[1] == 2)
+        if (vectorAction[1] == 0)
         {
             TurnRight();
-            AddReward(-0.001f); //Recently added
+            AddReward(0.0001f);
         }
-        /**/
-
-        /*
-        if (vectorAction[1] == 1)
-        {
-            Move();
-            TurnLeft();
-        }
-        if (vectorAction[1] == 2)
-        {
-            Move();
-            TurnRight();
-        }
-        */
 
     }
 
@@ -184,11 +172,15 @@ public class BoatAi : Agent
 
         if (collision.gameObject.CompareTag("Terrain") || collision.gameObject.CompareTag("Boat"))
         {
-            transform.localPosition = startingPosition;//new Vector3(-120f, -215, -150f);
-            transform.localRotation = startingRotation;//Quaternion.Euler(-90f, 180f, 0f);
+            collided = true;
+            transform.localPosition = startingPosition;
+            transform.localRotation = startingRotation;
             Debug.Log("collided with obstacle (terrain and/or another boat)");
             AddReward(-1f);
+            //Destroy(BOAT_AI_PREFAB);
             EndEpisode();
+            
+            //Instantiate(BOAT_AI_PREFAB, startingPosition, startingRotation);
         }
 /*
         if (collision.gameObject.CompareTag("Checkpoint"))
@@ -213,5 +205,10 @@ public class BoatAi : Agent
             score++;
             scoreboard.text = score.ToString();
         }
+    }
+
+    public bool getCollided()
+    {
+        return collided;
     }
 }
