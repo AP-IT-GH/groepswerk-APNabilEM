@@ -443,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8249731255334523903}
   - component: {fileID: 8249731255334523900}
+  - component: {fileID: 3830906967202823954}
   m_Layer: 0
   m_Name: sensor
   m_TagString: Untagged
@@ -476,15 +477,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: RayPerceptionSensor
+  m_SensorName: RayPerceptionOne
   m_DetectableTags:
-  - Checkpoint
   - Terrain
   - Boat
+  - Checkpoint
   m_RaysPerDirection: 3
-  m_MaxRayDegrees: 50
+  m_MaxRayDegrees: 120
   m_SphereCastRadius: 0.02
   m_RayLength: 1
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
+--- !u!114 &3830906967202823954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8249731255334523902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionTwo
+  m_DetectableTags:
+  - Terrain
+  - Boat
+  - Checkpoint
+  m_RaysPerDirection: 1
+  m_MaxRayDegrees: 3
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1053,7 +1083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0

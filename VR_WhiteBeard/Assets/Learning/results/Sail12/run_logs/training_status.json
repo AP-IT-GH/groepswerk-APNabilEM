@@ -1,0 +1,29 @@
+{
+    "LilBoat": {
+        "checkpoints": [
+            {
+                "steps": 68085,
+                "file_path": "results\\Sail12\\LilBoat\\LilBoat-68085.onnx",
+                "reward": null,
+                "creation_time": 1641725598.3245888,
+                "auxillary_file_paths": [
+                    "results\\Sail12\\LilBoat\\LilBoat-68085.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 68085,
+            "file_path": "results\\Sail12\\LilBoat.onnx",
+            "reward": null,
+            "creation_time": 1641725598.3245888,
+            "auxillary_file_paths": [
+                "results\\Sail12\\LilBoat\\LilBoat-68085.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0"
+    }
+}
