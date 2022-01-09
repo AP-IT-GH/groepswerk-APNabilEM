@@ -9,15 +9,51 @@
                 "auxillary_file_paths": [
                     "results\\Sail14\\LilBoat\\LilBoat-155828.pt"
                 ]
+            },
+            {
+                "steps": 499999,
+                "file_path": "results\\Sail14\\LilBoat\\LilBoat-499999.onnx",
+                "reward": null,
+                "creation_time": 1641730835.6451263,
+                "auxillary_file_paths": [
+                    "results\\Sail14\\LilBoat\\LilBoat-499999.pt"
+                ]
+            },
+            {
+                "steps": 686746,
+                "file_path": "results\\Sail14\\LilBoat\\LilBoat-686746.onnx",
+                "reward": null,
+                "creation_time": 1641732221.312587,
+                "auxillary_file_paths": [
+                    "results\\Sail14\\LilBoat\\LilBoat-686746.pt"
+                ]
+            },
+            {
+                "steps": 999991,
+                "file_path": "results\\Sail14\\LilBoat\\LilBoat-999991.onnx",
+                "reward": null,
+                "creation_time": 1641737426.712308,
+                "auxillary_file_paths": [
+                    "results\\Sail14\\LilBoat\\LilBoat-999991.pt"
+                ]
+            },
+            {
+                "steps": 1269518,
+                "file_path": "results\\Sail14\\LilBoat\\LilBoat-1269518.onnx",
+                "reward": null,
+                "creation_time": 1641740416.0878332,
+                "auxillary_file_paths": [
+                    "results\\Sail14\\LilBoat\\LilBoat-1269518.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 155828,
+            "steps": 1269518,
             "file_path": "results\\Sail14\\LilBoat.onnx",
             "reward": null,
-            "creation_time": 1641727696.441313,
+            "creation_time": 1641740416.0878332,
             "auxillary_file_paths": [
-                "results\\Sail14\\LilBoat\\LilBoat-155828.pt"
+                "results\\Sail14\\LilBoat\\LilBoat-1269518.pt"
             ]
         }
     },

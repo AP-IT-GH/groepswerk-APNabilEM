@@ -11,9 +11,7 @@ using Unity.MLAgents.Actuators;
 public class BoatAi : Agent
 {
     // Start is called before the first frame update
-    //[SerializeField] private float jumpStrength = 5f;
     public Text scoreboard;
-    //[SerializeField] private float speed = 1f;
     private bool canMove = true;
     private bool canTurn = true;
     private Rigidbody rigidbody;
@@ -22,7 +20,6 @@ public class BoatAi : Agent
     private Quaternion startingRotation;
     private int score = 0;
     public float speed = 1f;
-    //[SerializeField] private GameObject BOAT_AI_PREFAB;
     [SerializeField] private Transform position;
     private bool collided = false;
 
@@ -37,7 +34,6 @@ public class BoatAi : Agent
         startingPosition = position.localPosition;
         startingRotation = position.localRotation;
         rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        //Instantiate(BOAT_AI_PREFAB, startingPosition, startingRotation);
     }
 
     private void FixedUpdate()
@@ -90,7 +86,6 @@ public class BoatAi : Agent
             TurnRight();
             AddReward(0.0001f);
         }
-
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -100,9 +95,7 @@ public class BoatAi : Agent
         var movementRotation = 0;
         if (Input.GetKey(KeyCode.UpArrow))
         { 
-            move = 1;
-            //Move();
-           
+            move = 1;           
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -124,8 +117,6 @@ public class BoatAi : Agent
         if (canMove)
         {
             rigidbody.velocity = transform.forward * paddle.getSpeed() * speed;
-            //transform.position += Vector3.forward * Time.deltaTime * paddle.getSpeed();
-            //canMove = false;
         }
     }
 
@@ -137,13 +128,6 @@ public class BoatAi : Agent
         {
             transform.Rotate(new Vector3(0, -rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
         }
-        /*
-        if (canTurn && canMove)
-        {
-            transform.Rotate(new Vector3(0, -rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
-            rigidbody.velocity = transform.forward * paddle.getSpeed() * speed;
-        }
-        */
     }
 
     private void TurnRight()
@@ -154,13 +138,6 @@ public class BoatAi : Agent
         {
             transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
         }
-        /*
-        if (canTurn && canMove)
-        {
-            transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
-            rigidbody.velocity = transform.forward * paddle.getSpeed() * speed;
-        }
-        */
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -177,22 +154,9 @@ public class BoatAi : Agent
             transform.localRotation = startingRotation;
             Debug.Log("collided with obstacle (terrain and/or another boat)");
             AddReward(-1f);
-            //Destroy(BOAT_AI_PREFAB);
             EndEpisode();
-            
-            //Instantiate(BOAT_AI_PREFAB, startingPosition, startingRotation);
         }
-/*
-        if (collision.gameObject.CompareTag("Checkpoint"))
-        {
-            Debug.Log("collided with checkpoint");
-            AddReward(1f);
-        }*/
-        /*if (collision.transform.CompareTag("HiddenCollider"))
-        {
-            Debug.Log("collide with hidden collider");
-            AddReward(1f);
-        }*/
+        
 
     }
 
@@ -205,6 +169,19 @@ public class BoatAi : Agent
             score++;
             scoreboard.text = score.ToString();
         }
+        /**/
+        if (collidedObj.gameObject.CompareTag("Finish"))
+        {
+            transform.localPosition = startingPosition;
+            transform.localRotation = startingRotation;
+            score++;
+            scoreboard.text = score.ToString();
+            Debug.Log("Went through the finishline");
+            AddReward(10f);
+            EndEpisode();
+        }
+        /**/
+
     }
 
     public bool getCollided()
