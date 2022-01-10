@@ -67,11 +67,9 @@ public class BoatAi : Agent
         //base.OnActionReceived(vectorAction);
         if (vectorAction[0] == 1)
         {
-            //punish with small negative award to prevent jumping all the time
-            //AddReward(-0.01f);
             Move();
         }
-        else if (vectorAction[0] == 0)
+        if (vectorAction[0] == 0)
         {
             AddReward(-0.01f);
         }
@@ -79,12 +77,12 @@ public class BoatAi : Agent
         if (vectorAction[1] == 1)
         {
             TurnLeft();
-            AddReward(0.0001f);
+            AddReward(-0.0001f);
         }
         if (vectorAction[1] == 2)
         {
             TurnRight();
-            AddReward(0.0001f);
+            AddReward(-0.0001f);
         }
     }
 
@@ -184,8 +182,10 @@ public class BoatAi : Agent
 
     }
 
+    
     public bool getCollided()
     {
         return collided;
     }
+    
 }
