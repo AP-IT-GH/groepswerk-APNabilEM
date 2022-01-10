@@ -14,6 +14,7 @@ public class CheckpointDestroy : MonoBehaviour
     
     void Update()
     {
+
         if (boatAi.getCollided())
         {
             GetComponent<MeshRenderer>().enabled = true;
