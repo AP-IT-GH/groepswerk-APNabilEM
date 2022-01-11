@@ -11,12 +11,17 @@ public class Paddle : MonoBehaviour
     public Rigidbody boatsRigidbody;
     public float speed = 1f;
     public float rotationSpeed = 15f;
+    AudioSource audio;
 
-    
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>(); 
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == leftSide.gameObject.name)
         {
+            audio.Play();
             boatsRigidbody.velocity = transform.forward * speed;
             boat.transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
             //transform.Rotate(new Vector3(0, speed, 0) * Time.deltaTime * speed, Space.World);
@@ -24,7 +29,9 @@ public class Paddle : MonoBehaviour
         }
         if (other.gameObject.name == rightSide.gameObject.name)
         {
+
             
+            audio.Play();
             boatsRigidbody.velocity = transform.forward * speed;
             boat.transform.Rotate(new Vector3(0, -rotationSpeed, 0) * Time.deltaTime * speed, Space.World);
             //transform.Rotate(new Vector3(0, -speed, 0) * Time.deltaTime * speed, Space.World);
