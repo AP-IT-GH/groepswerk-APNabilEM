@@ -1,0 +1,65 @@
+{
+    "LilBoat": {
+        "checkpoints": [
+            {
+                "steps": 2499993,
+                "file_path": "results\\Boat02\\LilBoat\\LilBoat-2499993.onnx",
+                "reward": null,
+                "creation_time": 1641403433.2691555,
+                "auxillary_file_paths": [
+                    "results\\Boat02\\LilBoat\\LilBoat-2499993.pt"
+                ]
+            },
+            {
+                "steps": 2969647,
+                "file_path": "results\\Boat02\\LilBoat\\LilBoat-2969647.onnx",
+                "reward": null,
+                "creation_time": 1641405320.6721137,
+                "auxillary_file_paths": [
+                    "results\\Boat02\\LilBoat\\LilBoat-2969647.pt"
+                ]
+            },
+            {
+                "steps": 2979167,
+                "file_path": "results\\Boat02\\LilBoat\\LilBoat-2979167.onnx",
+                "reward": null,
+                "creation_time": 1641405471.085449,
+                "auxillary_file_paths": [
+                    "results\\Boat02\\LilBoat\\LilBoat-2979167.pt"
+                ]
+            },
+            {
+                "steps": 2999997,
+                "file_path": "results\\Boat02\\LilBoat\\LilBoat-2999997.onnx",
+                "reward": null,
+                "creation_time": 1641405607.6762233,
+                "auxillary_file_paths": [
+                    "results\\Boat02\\LilBoat\\LilBoat-2999997.pt"
+                ]
+            },
+            {
+                "steps": 3123673,
+                "file_path": "results\\Boat02\\LilBoat\\LilBoat-3123673.onnx",
+                "reward": null,
+                "creation_time": 1641406116.2759507,
+                "auxillary_file_paths": [
+                    "results\\Boat02\\LilBoat\\LilBoat-3123673.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3123673,
+            "file_path": "results\\Boat02\\LilBoat.onnx",
+            "reward": null,
+            "creation_time": 1641406116.2759507,
+            "auxillary_file_paths": [
+                "results\\Boat02\\LilBoat\\LilBoat-3123673.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0"
+    }
+}

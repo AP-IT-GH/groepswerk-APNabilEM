@@ -7,6 +7,7 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using UnityEngine.UI;
 using Unity.MLAgents.Actuators;
+using System.Linq;
 
 public class BoatAi : Agent
 {
@@ -22,6 +23,8 @@ public class BoatAi : Agent
     public float speed = 1f;
     [SerializeField] private Transform position;
     private bool collided = false;
+    private int aantalCheckpoints = 0;
+    private List<string> checkpoints = new List<string>();
 
 
     // Start is called before the first frame update
@@ -51,6 +54,51 @@ public class BoatAi : Agent
     // Update is called once per frame
     void Update()
     {
+        if (aantalCheckpoints > 4)
+        {
+            AddReward(-5f);
+            EndEpisode();
+            aantalCheckpoints = 0;
+        }
+        /*if (checkpoints.Count != checkpoints.Distinct().Count())
+        {
+            // Duplicates exist
+            AddReward(-2f);
+            EndEpisode();
+            checkpoints.Clear();
+            transform.localPosition = startingPosition;
+            transform.localRotation = startingRotation;
+        }*/
+        /*if (checkpoints.Contains(gameObject.name))
+        {
+            AddReward(-2f);
+            EndEpisode();
+            checkpoints.Clear();
+            transform.localPosition = startingPosition;
+            transform.localRotation = startingRotation;
+        }*/
+
+       /* if (checkpoints.Count >= 2)
+        {
+            for (int i = 0; i < checkpoints.Count; i++)
+            {
+                if (checkpoints[i] == checkpoints[checkpoints.Count -1])
+                {
+                    AddReward(-5f);
+                    EndEpisode();
+                    transform.localPosition = startingPosition;
+                    transform.localRotation = startingRotation;
+                }
+            }
+        }*/
+
+        /*if (position.rotation.y >= 180 || position.rotation.y <= -180)
+        {
+            AddReward(-3f);
+            EndEpisode();
+            transform.localPosition = startingPosition;
+            transform.localRotation = startingRotation;
+        }*/
         scoreboard.text = GetCumulativeReward().ToString("f4");
     }
 
@@ -79,14 +127,15 @@ public class BoatAi : Agent
         if (vectorAction[1] == 1)
         {
             TurnLeft();
-            AddReward(0.0001f);
+            
         }
         if (vectorAction[1] == 2)
         {
             TurnRight();
-            AddReward(0.0001f);
+            
         }
     }
+    
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
@@ -150,6 +199,7 @@ public class BoatAi : Agent
         if (collision.gameObject.CompareTag("Terrain") || collision.gameObject.CompareTag("Boat"))
         {
             collided = true;
+            //checkpoints.Clear();
             transform.localPosition = startingPosition;
             transform.localRotation = startingRotation;
             Debug.Log("collided with obstacle (terrain and/or another boat)");
@@ -164,14 +214,19 @@ public class BoatAi : Agent
     {
         if (collidedObj.gameObject.CompareTag("Checkpoint"))
         {
+            checkpoints.Add(gameObject.name);
             AddReward(1f);
+            aantalCheckpoints++;
             Debug.Log("Went through the checkpoint");
             score++;
             scoreboard.text = score.ToString();
         }
+        
         /**/
         if (collidedObj.gameObject.CompareTag("Finish"))
         {
+            checkpoints.Add(gameObject.name);
+            aantalCheckpoints++;
             transform.localPosition = startingPosition;
             transform.localRotation = startingRotation;
             score++;
@@ -183,6 +238,7 @@ public class BoatAi : Agent
         /**/
 
     }
+
 
     public bool getCollided()
     {

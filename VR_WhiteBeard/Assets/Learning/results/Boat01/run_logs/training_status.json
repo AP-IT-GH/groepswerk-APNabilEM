@@ -1,0 +1,65 @@
+{
+    "LilBoat": {
+        "checkpoints": [
+            {
+                "steps": 313010,
+                "file_path": "results\\Boat01\\LilBoat\\LilBoat-313010.onnx",
+                "reward": null,
+                "creation_time": 1641349093.3856695,
+                "auxillary_file_paths": [
+                    "results\\Boat01\\LilBoat\\LilBoat-313010.pt"
+                ]
+            },
+            {
+                "steps": 335010,
+                "file_path": "results\\Boat01\\LilBoat\\LilBoat-335010.onnx",
+                "reward": null,
+                "creation_time": 1641349218.1980915,
+                "auxillary_file_paths": [
+                    "results\\Boat01\\LilBoat\\LilBoat-335010.pt"
+                ]
+            },
+            {
+                "steps": 359050,
+                "file_path": "results\\Boat01\\LilBoat\\LilBoat-359050.onnx",
+                "reward": null,
+                "creation_time": 1641349536.8702884,
+                "auxillary_file_paths": [
+                    "results\\Boat01\\LilBoat\\LilBoat-359050.pt"
+                ]
+            },
+            {
+                "steps": 377050,
+                "file_path": "results\\Boat01\\LilBoat\\LilBoat-377050.onnx",
+                "reward": null,
+                "creation_time": 1641349759.8059747,
+                "auxillary_file_paths": [
+                    "results\\Boat01\\LilBoat\\LilBoat-377050.pt"
+                ]
+            },
+            {
+                "steps": 452181,
+                "file_path": "results\\Boat01\\LilBoat\\LilBoat-452181.onnx",
+                "reward": null,
+                "creation_time": 1641350129.2014103,
+                "auxillary_file_paths": [
+                    "results\\Boat01\\LilBoat\\LilBoat-452181.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 452181,
+            "file_path": "results\\Boat01\\LilBoat.onnx",
+            "reward": null,
+            "creation_time": 1641350129.2014103,
+            "auxillary_file_paths": [
+                "results\\Boat01\\LilBoat\\LilBoat-452181.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0"
+    }
+}

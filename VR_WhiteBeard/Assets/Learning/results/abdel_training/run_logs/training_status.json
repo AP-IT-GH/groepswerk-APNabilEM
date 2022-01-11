@@ -1,0 +1,65 @@
+{
+    "LilBoat": {
+        "checkpoints": [
+            {
+                "steps": 4516191,
+                "file_path": "results\\abdel_training\\LilBoat\\LilBoat-4516191.onnx",
+                "reward": null,
+                "creation_time": 1641918819.857206,
+                "auxillary_file_paths": [
+                    "results\\abdel_training\\LilBoat\\LilBoat-4516191.pt"
+                ]
+            },
+            {
+                "steps": 4734867,
+                "file_path": "results\\abdel_training\\LilBoat\\LilBoat-4734867.onnx",
+                "reward": null,
+                "creation_time": 1641921147.8224597,
+                "auxillary_file_paths": [
+                    "results\\abdel_training\\LilBoat\\LilBoat-4734867.pt"
+                ]
+            },
+            {
+                "steps": 4810525,
+                "file_path": "results\\abdel_training\\LilBoat\\LilBoat-4810525.onnx",
+                "reward": null,
+                "creation_time": 1641921526.3862565,
+                "auxillary_file_paths": [
+                    "results\\abdel_training\\LilBoat\\LilBoat-4810525.pt"
+                ]
+            },
+            {
+                "steps": 4830096,
+                "file_path": "results\\abdel_training\\LilBoat\\LilBoat-4830096.onnx",
+                "reward": null,
+                "creation_time": 1641922726.4566236,
+                "auxillary_file_paths": [
+                    "results\\abdel_training\\LilBoat\\LilBoat-4830096.pt"
+                ]
+            },
+            {
+                "steps": 4843326,
+                "file_path": "results\\abdel_training\\LilBoat\\LilBoat-4843326.onnx",
+                "reward": null,
+                "creation_time": 1641922818.7388072,
+                "auxillary_file_paths": [
+                    "results\\abdel_training\\LilBoat\\LilBoat-4843326.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4843326,
+            "file_path": "results\\abdel_training\\LilBoat.onnx",
+            "reward": null,
+            "creation_time": 1641922818.7388072,
+            "auxillary_file_paths": [
+                "results\\abdel_training\\LilBoat\\LilBoat-4843326.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0"
+    }
+}
